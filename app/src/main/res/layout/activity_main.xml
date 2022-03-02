@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="108dp"
+        android:layout_marginTop="91dp"
+        android:layout_marginEnd="93dp"
+        android:layout_marginBottom="595dp"
+        android:ems="10"
+        android:hint="inserisci il nome del file"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnScrivi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="74dp"
+        android:layout_marginTop="131dp"
+        android:layout_marginEnd="250dp"
+        android:layout_marginBottom="187dp"
+        android:text="scrivi"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textArea" />
+
+    <Button
+        android:id="@+id/btnLeggi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="83dp"
+        android:layout_marginTop="53dp"
+        android:layout_marginEnd="79dp"
+        android:layout_marginBottom="187dp"
+        android:text="leggi"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnScrivi"
+        app:layout_constraintTop_toBottomOf="@+id/testo" />
+
+    <TextView
+        android:id="@+id/testo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="177dp"
+        android:layout_marginTop="288dp"
+        android:layout_marginEnd="176dp"
+        android:layout_marginBottom="288dp"
+        android:text="testo restituito"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTxt" />
+
+    <EditText
+        android:id="@+id/textArea"
+        android:layout_width="346dp"
+        android:layout_height="175dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="54dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="59dp"
+        android:ems="10"
+        android:hint="Inserisci la frase che vuoi scrivere nel file"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/testo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTxt" />
+
+    <Button
+        android:id="@+id/rawRes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="74dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="249dp"
+        android:layout_marginBottom="106dp"
+        android:text="raw"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnScrivi" />
+
+    <Button
+        android:id="@+id/assetsFolder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="83dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="72dp"
+        android:layout_marginBottom="103dp"
+        android:text="Assets"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/rawRes"
+        app:layout_constraintTop_toBottomOf="@+id/btnLeggi" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
